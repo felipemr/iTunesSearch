@@ -7,11 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "iTunesManager.h"
 
 @interface TableViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
-
+@property iTunesManager *itunes;
 @property (strong, nonatomic) IBOutlet UITableView *tableview;
+@property (weak, nonatomic) IBOutlet UITextField *searchText;
+
+- (IBAction)search:(id)sender;
 
 @end
 

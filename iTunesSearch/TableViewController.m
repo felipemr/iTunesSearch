@@ -19,7 +19,7 @@
 
 @implementation TableViewController
 
-
+@synthesize itunes;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -27,8 +27,8 @@
     UINib *nib = [UINib nibWithNibName:@"TableViewCell" bundle:nil];
     [self.tableview registerNib:nib forCellReuseIdentifier:@"celulaPadrao"];
     
-    iTunesManager *itunes = [iTunesManager sharedInstance];
-    midias = [itunes buscarMidias:@"Apple"];
+    itunes = [iTunesManager sharedInstance];
+    
     
 #warning Necessario para que a table view tenha um espaco em relacao ao topo, pois caso contrario o texto ficara atras da barra superior
     self.tableview.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, self.tableview.bounds.size.width, 15.f)];
@@ -56,6 +56,12 @@
     
     [celula.nome setText:filme.nome];
     [celula.tipo setText:@"Filme"];
+    [celula.genero setText:filme.genero];
+//    float duracaoH= [filme.duracao floatValue]/3600000;
+//    [celula.duracao setText:[NSString stri ngWithFormat:@"%f.2",duracaoH]];
+    [celula.duracao setText:@""];
+    [celula.preco setText:[NSString stringWithFormat:@"%@",filme.preco]];
+    NSLog(@"%@",filme.duracao);
     
     return celula;
 }
@@ -65,4 +71,13 @@
 }
 
 
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    [self.view endEditing:YES];
+}
+
+
+- (IBAction)search:(id)sender {
+    midias = [itunes buscarMidias:_searchText.text];
+    [self.tableview reloadData];
+}
 @end
