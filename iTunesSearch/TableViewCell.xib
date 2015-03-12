@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -20,14 +20,8 @@
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tipo da Mídia" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Z5-yj-wnl">
-                        <rect key="frame" x="202" y="28" width="90" height="21"/>
-                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
-                        <color key="textColor" red="0.89928382640000004" green="0.12798005339999999" blue="0.001599563868" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Duracao" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yif-ne-aa9">
-                        <rect key="frame" x="8" y="35" width="46" height="21"/>
+                        <rect key="frame" x="8" y="35" width="115" height="21"/>
                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
@@ -39,25 +33,16 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Preco" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JxO-kh-dTS">
-                        <rect key="frame" x="250" y="44" width="45" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="USD$" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lLj-ui-Kqy">
-                        <rect key="frame" x="202" y="44" width="45" height="21"/>
+                        <rect key="frame" x="210" y="41" width="82" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailingMargin" secondItem="6Z5-yj-wnl" secondAttribute="trailing" id="20H-3b-RZ8"/>
-                    <constraint firstItem="6Z5-yj-wnl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="194" id="96O-aR-ps1"/>
                     <constraint firstItem="UIA-JU-luV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Q1V-YW-Wh5"/>
                     <constraint firstItem="UIA-JU-luV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="YdC-rX-aV6"/>
                     <constraint firstAttribute="trailingMargin" secondItem="UIA-JU-luV" secondAttribute="trailing" id="cTH-Nq-14q"/>
-                    <constraint firstItem="6Z5-yj-wnl" firstAttribute="top" secondItem="UIA-JU-luV" secondAttribute="bottom" constant="-1" id="tJH-0d-wda"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
@@ -65,7 +50,6 @@
                 <outlet property="genero" destination="FdM-0m-eww" id="N9S-Yc-5R1"/>
                 <outlet property="nome" destination="UIA-JU-luV" id="ubX-WX-gam"/>
                 <outlet property="preco" destination="JxO-kh-dTS" id="YG7-9r-w6x"/>
-                <outlet property="tipo" destination="6Z5-yj-wnl" id="vYj-HE-tLd"/>
             </connections>
             <point key="canvasLocation" x="577" y="83"/>
         </tableViewCell>

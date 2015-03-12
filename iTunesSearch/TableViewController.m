@@ -9,7 +9,8 @@
 #import "TableViewController.h"
 #import "TableViewCell.h"
 #import "iTunesManager.h"
-#import "Entidades/Filme.h"
+//#import "Entidades/Filme.h"
+#import "Entidades/Midia.h"
 
 @interface TableViewController () {
     NSArray *midias;
@@ -19,7 +20,7 @@
 
 @implementation TableViewController
 
-@synthesize itunes;
+@synthesize itunes,searchBtn;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -29,8 +30,9 @@
     
     itunes = [iTunesManager sharedInstance];
     
+    [searchBtn setTitle:NSLocalizedString(@"Search", @"botao de pesquisa") forState:UIControlStateNormal];
     
-#warning Necessario para que a table view tenha um espaco em relacao ao topo, pois caso contrario o texto ficara atras da barra superior
+// Necessario para que a table view tenha um espaco em relacao ao topo, pois caso contrario o texto ficara atras da barra superior
     self.tableview.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, self.tableview.bounds.size.width, 15.f)];
 }
 
@@ -42,26 +44,45 @@
 
 #pragma mark - Metodos do UITableViewDataSource
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+    return [midias count];
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [midias count];
+    switch (section) {
+        case 0:
+            return [midias[0] count];
+            break;
+            
+        case 1:
+            return [midias[1] count];
+            break;
+        case 2:
+            return [midias[2] count];
+            break;
+        case 3:
+            return [midias[3] count];
+            break;
+        case 4:
+            return [midias[4] count];
+            break;
+        default:
+            return 0;
+            break;
+    }
+    return 0;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     TableViewCell *celula = [self.tableview dequeueReusableCellWithIdentifier:@"celulaPadrao"];
-    
-    Filme *filme = [midias objectAtIndex:indexPath.row];
-    
-    [celula.nome setText:filme.nome];
-    [celula.tipo setText:@"Filme"];
-    [celula.genero setText:filme.genero];
-//    float duracaoH= [filme.duracao floatValue]/3600000;
-//    [celula.duracao setText:[NSString stri ngWithFormat:@"%f.2",duracaoH]];
-    [celula.duracao setText:@""];
-    [celula.preco setText:[NSString stringWithFormat:@"%@",filme.preco]];
-    NSLog(@"%@",filme.duracao);
+    long row=indexPath.row;
+        Midia *midia = [midias[indexPath.section] objectAtIndex:row];
+        [celula.nome setText:midia.nome];
+        [celula.tipo setText:midia.tipo];
+        [celula.genero setText:midia.genero];
+    [celula.duracao setText:midia.artista];
+//        //    float duracaoH= [filme.duracao floatValue]/3600000;
+//        //    [celula.duracao setText:[NSString stringWithFormat:@"%f.2",duracaoH]];
+        [celula.preco setText:[NSString stringWithFormat:@"USD:%@",midia.preco]];
     
     return celula;
 }
@@ -70,10 +91,25 @@
     return 70;
 }
 
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    Midia *midia=midias[section][0];
+//    if (section == 0)
+//        return @"section1";
+//    if (section == 1)
+//        return @"section2";
+//    if (section == 2)
+//        return @"section3";
+//    if (section == 3)
+//        return @"section4";
+//    if (section == 4)
+//        return @"section5";
+    return midia.tipo;
+}
+
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
     [self.view endEditing:YES];
-}
+} 
 
 
 - (IBAction)search:(id)sender {

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E76B9D51AB14DA100C8484B /* Midia.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E76B9D41AB14DA100C8484B /* Midia.m */; };
+		6ECCCB091AB0738400D78BE4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6ECCCB0B1AB0738400D78BE4 /* InfoPlist.strings */; };
+		6ECCCB0E1AB0738400D78BE4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6ECCCB101AB0738400D78BE4 /* InfoPlist.strings */; };
+		6ECCCB131AB0738400D78BE4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6ECCCB151AB0738400D78BE4 /* Localizable.strings */; };
 		92C21CB61AAE757A0052ABE6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 92C21CB51AAE757A0052ABE6 /* main.m */; };
 		92C21CB91AAE757A0052ABE6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92C21CB81AAE757A0052ABE6 /* AppDelegate.m */; };
 		92C21CBC1AAE757A0052ABE6 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92C21CBB1AAE757A0052ABE6 /* TableViewController.m */; };
@@ -16,7 +20,6 @@
 		92C21CDD1AAE75DC0052ABE6 /* TableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92C21CDC1AAE75DC0052ABE6 /* TableView.xib */; };
 		92C21CE11AAE76930052ABE6 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 92C21CDF1AAE76930052ABE6 /* TableViewCell.m */; };
 		92C21CE21AAE76930052ABE6 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92C21CE01AAE76930052ABE6 /* TableViewCell.xib */; };
-		92C21CE81AAE858E0052ABE6 /* Filme.m in Sources */ = {isa = PBXBuildFile; fileRef = 92C21CE71AAE858E0052ABE6 /* Filme.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +33,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6E76B95A1AB0745400C8484B /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		6E76B95B1AB0745400C8484B /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6E76B95C1AB0745400C8484B /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6E76B9D31AB14DA100C8484B /* Midia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Midia.h; path = Entidades/Midia.h; sourceTree = "<group>"; };
+		6E76B9D41AB14DA100C8484B /* Midia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Midia.m; path = Entidades/Midia.m; sourceTree = "<group>"; };
+		6ECCCB0A1AB0738400D78BE4 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6ECCCB0F1AB0738400D78BE4 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6ECCCB141AB0738400D78BE4 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
 		92C21CB01AAE757A0052ABE6 /* iTunesSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92C21CB41AAE757A0052ABE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92C21CB51AAE757A0052ABE6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -47,8 +58,6 @@
 		92C21CDE1AAE76930052ABE6 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
 		92C21CDF1AAE76930052ABE6 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 		92C21CE01AAE76930052ABE6 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
-		92C21CE61AAE858E0052ABE6 /* Filme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Filme.h; path = Entidades/Filme.h; sourceTree = "<group>"; };
-		92C21CE71AAE858E0052ABE6 /* Filme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Filme.m; path = Entidades/Filme.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +117,8 @@
 		92C21CB31AAE757A0052ABE6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6ECCCB151AB0738400D78BE4 /* Localizable.strings */,
+				6ECCCB101AB0738400D78BE4 /* InfoPlist.strings */,
 				92C21CB41AAE757A0052ABE6 /* Info.plist */,
 				92C21CB51AAE757A0052ABE6 /* main.m */,
 			);
@@ -126,6 +137,7 @@
 		92C21CCD1AAE757A0052ABE6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6ECCCB0B1AB0738400D78BE4 /* InfoPlist.strings */,
 				92C21CCE1AAE757A0052ABE6 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -134,9 +146,9 @@
 		92C21CE31AAE76AA0052ABE6 /* Celulas */ = {
 			isa = PBXGroup;
 			children = (
+				92C21CE01AAE76930052ABE6 /* TableViewCell.xib */,
 				92C21CDE1AAE76930052ABE6 /* TableViewCell.h */,
 				92C21CDF1AAE76930052ABE6 /* TableViewCell.m */,
-				92C21CE01AAE76930052ABE6 /* TableViewCell.xib */,
 			);
 			name = Celulas;
 			sourceTree = "<group>";
@@ -144,8 +156,8 @@
 		92C21CE91AAE859A0052ABE6 /* Entidades */ = {
 			isa = PBXGroup;
 			children = (
-				92C21CE61AAE858E0052ABE6 /* Filme.h */,
-				92C21CE71AAE858E0052ABE6 /* Filme.m */,
+				6E76B9D31AB14DA100C8484B /* Midia.h */,
+				6E76B9D41AB14DA100C8484B /* Midia.m */,
 			);
 			name = Entidades;
 			sourceTree = "<group>";
@@ -230,7 +242,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6ECCCB131AB0738400D78BE4 /* Localizable.strings in Resources */,
 				92C21CC11AAE757A0052ABE6 /* Images.xcassets in Resources */,
+				6ECCCB0E1AB0738400D78BE4 /* InfoPlist.strings in Resources */,
 				92C21CE21AAE76930052ABE6 /* TableViewCell.xib in Resources */,
 				92C21CDD1AAE75DC0052ABE6 /* TableView.xib in Resources */,
 			);
@@ -240,6 +254,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6ECCCB091AB0738400D78BE4 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,8 +267,8 @@
 			files = (
 				92C21CBC1AAE757A0052ABE6 /* TableViewController.m in Sources */,
 				92C21CDB1AAE75B30052ABE6 /* iTunesManager.m in Sources */,
+				6E76B9D51AB14DA100C8484B /* Midia.m in Sources */,
 				92C21CB91AAE757A0052ABE6 /* AppDelegate.m in Sources */,
-				92C21CE81AAE858E0052ABE6 /* Filme.m in Sources */,
 				92C21CE11AAE76930052ABE6 /* TableViewCell.m in Sources */,
 				92C21CB61AAE757A0052ABE6 /* main.m in Sources */,
 			);
@@ -276,6 +291,36 @@
 			targetProxy = 92C21CCA1AAE757A0052ABE6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6ECCCB0B1AB0738400D78BE4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6ECCCB0A1AB0738400D78BE4 /* pt */,
+				6E76B95C1AB0745400C8484B /* fr */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6ECCCB101AB0738400D78BE4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6ECCCB0F1AB0738400D78BE4 /* pt */,
+				6E76B95B1AB0745400C8484B /* fr */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6ECCCB151AB0738400D78BE4 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6ECCCB141AB0738400D78BE4 /* pt */,
+				6E76B95A1AB0745400C8484B /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		92C21CD11AAE757A0052ABE6 /* Debug */ = {
@@ -364,6 +409,7 @@
 				INFOPLIST_FILE = iTunesSearch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -375,6 +421,7 @@
 				INFOPLIST_FILE = iTunesSearch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

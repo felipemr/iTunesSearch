@@ -14,6 +14,7 @@
 @property iTunesManager *itunes;
 @property (strong, nonatomic) IBOutlet UITableView *tableview;
 @property (weak, nonatomic) IBOutlet UITextField *searchText;
+@property (weak, nonatomic) IBOutlet UIButton *searchBtn;
 
 - (IBAction)search:(id)sender;
 

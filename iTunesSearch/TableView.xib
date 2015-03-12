@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TableViewController">
             <connections>
+                <outlet property="searchBtn" destination="5aR-Fk-1lN" id="y2U-l7-oKT"/>
                 <outlet property="searchText" destination="9jw-Mj-bfe" id="hbu-qZ-2Lw"/>
                 <outlet property="tableview" destination="MJF-JT-V76" id="hH9-sP-tjq"/>
                 <outlet property="view" destination="Npq-av-WXm" id="3wU-nw-jy3"/>
@@ -20,14 +21,14 @@
                     <rect key="frame" x="0.0" y="62" width="600" height="538"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                        <rect key="frame" x="0.0" y="57" width="400" height="743"/>
+                        <rect key="frame" x="0.0" y="57" width="400" height="710"/>
                     </variation>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="C6Q-h4-6Z5"/>
                         <outlet property="delegate" destination="-1" id="50e-kR-ebg"/>
                     </connections>
                 </tableView>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5aR-Fk-1lN">
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5aR-Fk-1lN">
                     <rect key="frame" x="444" y="18" width="46" height="30"/>
                     <state key="normal" title="Search">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -36,7 +37,7 @@
                         <action selector="search:" destination="-1" eventType="touchUpInside" id="rcN-NK-lbd"/>
                     </connections>
                 </button>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9jw-Mj-bfe">
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9jw-Mj-bfe">
                     <rect key="frame" x="126" y="19" width="250" height="30"/>
                     <constraints>
                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="HwZ-7t-RrP">
@@ -54,8 +55,7 @@
                             <exclude reference="kTh-6l-nM2"/>
                         </mask>
                     </variation>
-                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                        <rect key="frame" x="27" y="21" width="200" height="30"/>
+                    <variation key="heightClass=regular-widthClass=compact">
                         <mask key="constraints">
                             <exclude reference="HwZ-7t-RrP"/>
                             <include reference="kTh-6l-nM2"/>
