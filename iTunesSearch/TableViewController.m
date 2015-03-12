@@ -75,11 +75,13 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     TableViewCell *celula = [self.tableview dequeueReusableCellWithIdentifier:@"celulaPadrao"];
     long row=indexPath.row;
-        Midia *midia = [midias[indexPath.section] objectAtIndex:row];
-        [celula.nome setText:midia.nome];
-        [celula.tipo setText:midia.tipo];
-        [celula.genero setText:midia.genero];
-    [celula.duracao setText:midia.artista];
+    Midia *midia = [midias[indexPath.section] objectAtIndex:row];
+    [celula.nome setText:midia.nome];
+    [celula.tipo setText:midia.tipo];
+    [celula.genero setText:midia.genero];
+    [celula.artista setText:midia.artista];
+    
+    [celula.imgView setImage:[UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:midia.imgUrl]]]];
 //        //    float duracaoH= [filme.duracao floatValue]/3600000;
 //        //    [celula.duracao setText:[NSString stringWithFormat:@"%f.2",duracaoH]];
         [celula.preco setText:[NSString stringWithFormat:@"USD:%@",midia.preco]];
@@ -93,16 +95,6 @@
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
     Midia *midia=midias[section][0];
-//    if (section == 0)
-//        return @"section1";
-//    if (section == 1)
-//        return @"section2";
-//    if (section == 2)
-//        return @"section3";
-//    if (section == 3)
-//        return @"section4";
-//    if (section == 4)
-//        return @"section5";
     return midia.tipo;
 }
 

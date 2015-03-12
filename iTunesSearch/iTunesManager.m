@@ -35,7 +35,7 @@ static bool isFirstAccess = YES;
     }
     
     
-    NSString *urlString = [NSString stringWithFormat:@"https://itunes.apple.com/search?term=%@&media=all&limit=200", termo];
+    NSString *urlString = [NSString stringWithFormat:@"https://itunes.apple.com/search?term=%@&media=all", termo];
     NSURL *url=[[NSURL alloc] initWithString:[urlString stringByAddingPercentEscapesUsingEncoding: NSUTF8StringEncoding]];
     
     NSData *jsonData = [NSData dataWithContentsOfURL: url];
@@ -74,6 +74,7 @@ static bool isFirstAccess = YES;
             [meu setGenero:[item objectForKey:@"primaryGenreName"]];
             [meu setPais:[item objectForKey:@"country"]];
             [meu setPreco:[item objectForKey:@"trackPrice"]];
+            [meu setImgUrl:[item objectForKey:@"artworkUrl100"]];
             [song addObject:meu];
         }
         if ([[item objectForKey:@"kind"]  isEqual: @"book"]) {
@@ -85,6 +86,7 @@ static bool isFirstAccess = YES;
             [meu setGenero:[item objectForKey:@"primaryGenreName"]];
             [meu setPais:[item objectForKey:@"country"]];
             [meu setPreco:[item objectForKey:@"trackPrice"]];
+            [meu setImgUrl:[item objectForKey:@"artworkUrl100"]];
             [book addObject:meu];
         }
         if ([[item objectForKey:@"kind"]  isEqual: @"feature-movie"]) {
@@ -97,6 +99,7 @@ static bool isFirstAccess = YES;
             [filme setGenero:[item objectForKey:@"primaryGenreName"]];
             [filme setPais:[item objectForKey:@"country"]];
             [filme setPreco:[item objectForKey:@"trackPrice"]];
+            [filme setImgUrl:[item objectForKey:@"artworkUrl100"]];
             [featureMovie addObject:filme];
         }
         if ([[item objectForKey:@"kind"]  isEqual: @"podcast"]) {
@@ -108,6 +111,7 @@ static bool isFirstAccess = YES;
             [meu setGenero:[item objectForKey:@"primaryGenreName"]];
             [meu setPais:[item objectForKey:@"country"]];
             [meu setPreco:[item objectForKey:@"trackPrice"]];
+            [meu setImgUrl:[item objectForKey:@"artworkUrl100"]];
             [podcast addObject:meu];
         }
         

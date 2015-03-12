@@ -12,9 +12,9 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *nome;
 @property (weak, nonatomic) IBOutlet UILabel *tipo;
+@property (weak, nonatomic) IBOutlet UIImageView *imgView;
 @property (weak, nonatomic) IBOutlet UILabel *preco;
 @property (weak, nonatomic) IBOutlet UILabel *genero;
-@property (weak, nonatomic) IBOutlet UILabel *duracao;
-
+@property (weak, nonatomic) IBOutlet UILabel *artista;
 
 @end

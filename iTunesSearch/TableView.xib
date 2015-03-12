@@ -17,17 +17,6 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="MJF-JT-V76">
-                    <rect key="frame" x="0.0" y="62" width="600" height="538"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                        <rect key="frame" x="0.0" y="57" width="400" height="710"/>
-                    </variation>
-                    <connections>
-                        <outlet property="dataSource" destination="-1" id="C6Q-h4-6Z5"/>
-                        <outlet property="delegate" destination="-1" id="50e-kR-ebg"/>
-                    </connections>
-                </tableView>
                 <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5aR-Fk-1lN">
                     <rect key="frame" x="444" y="18" width="46" height="30"/>
                     <state key="normal" title="Search">
@@ -62,16 +51,32 @@
                         </mask>
                     </variation>
                 </textField>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="MJF-JT-V76">
+                    <rect key="frame" x="0.0" y="62" width="600" height="538"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="C6Q-h4-6Z5"/>
+                        <outlet property="delegate" destination="-1" id="50e-kR-ebg"/>
+                    </connections>
+                </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstAttribute="trailing" secondItem="MJF-JT-V76" secondAttribute="trailing" id="5s8-FJ-uJq"/>
+                <constraint firstItem="MJF-JT-V76" firstAttribute="top" secondItem="9jw-Mj-bfe" secondAttribute="bottom" constant="8" id="8L8-Dd-bfJ"/>
                 <constraint firstAttribute="trailing" secondItem="5aR-Fk-1lN" secondAttribute="trailing" constant="19" id="UKN-lC-13F"/>
                 <constraint firstItem="9jw-Mj-bfe" firstAttribute="leading" secondItem="Npq-av-WXm" secondAttribute="leading" constant="27" id="VeZ-VF-pLR"/>
                 <constraint firstItem="9jw-Mj-bfe" firstAttribute="top" secondItem="Npq-av-WXm" secondAttribute="top" constant="20" id="Zp7-My-g5S"/>
                 <constraint firstItem="5aR-Fk-1lN" firstAttribute="top" secondItem="Npq-av-WXm" secondAttribute="top" constant="20" id="erq-Fc-XrD"/>
+                <constraint firstAttribute="bottom" secondItem="MJF-JT-V76" secondAttribute="bottom" id="pn8-Mx-pDb"/>
+                <constraint firstItem="MJF-JT-V76" firstAttribute="leading" secondItem="Npq-av-WXm" secondAttribute="leading" id="yb6-1y-qMR"/>
             </constraints>
             <variation key="default">
                 <mask key="constraints">
+                    <exclude reference="5s8-FJ-uJq"/>
+                    <exclude reference="8L8-Dd-bfJ"/>
+                    <exclude reference="pn8-Mx-pDb"/>
+                    <exclude reference="yb6-1y-qMR"/>
                     <exclude reference="VeZ-VF-pLR"/>
                     <exclude reference="Zp7-My-g5S"/>
                     <exclude reference="UKN-lC-13F"/>
@@ -80,6 +85,10 @@
             </variation>
             <variation key="heightClass=regular-widthClass=compact">
                 <mask key="constraints">
+                    <include reference="5s8-FJ-uJq"/>
+                    <include reference="8L8-Dd-bfJ"/>
+                    <include reference="pn8-Mx-pDb"/>
+                    <include reference="yb6-1y-qMR"/>
                     <include reference="VeZ-VF-pLR"/>
                     <include reference="Zp7-My-g5S"/>
                     <include reference="UKN-lC-13F"/>
@@ -88,11 +97,5 @@
             </variation>
             <point key="canvasLocation" x="745" y="515"/>
         </view>
-        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="ZGJ-w2-M8W">
-            <rect key="frame" x="0.0" y="0.0" width="97" height="30"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-            <textInputTraits key="textInputTraits"/>
-        </textField>
     </objects>
 </document>
