@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E7319F61AB34D670009E1C3 /* Filme.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7319F51AB34D670009E1C3 /* Filme.m */; };
+		6E7319F91AB34D750009E1C3 /* Musica.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7319F81AB34D750009E1C3 /* Musica.m */; };
+		6E7319FC1AB34D930009E1C3 /* Ebook.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7319FB1AB34D930009E1C3 /* Ebook.m */; };
+		6E7319FF1AB34DB90009E1C3 /* Podcast.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7319FE1AB34DB90009E1C3 /* Podcast.m */; };
+		6E731A081AB34F8D0009E1C3 /* MidiaViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E731A061AB34F8D0009E1C3 /* MidiaViewViewController.m */; };
+		6E731A091AB34F8D0009E1C3 /* MidiaViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E731A071AB34F8D0009E1C3 /* MidiaViewViewController.xib */; };
+		6E731A0E1AB35CC80009E1C3 /* movie.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E731A0B1AB35CC80009E1C3 /* movie.png */; };
+		6E731A0F1AB35CC80009E1C3 /* music.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E731A0C1AB35CC80009E1C3 /* music.png */; };
+		6E731A101AB35CC80009E1C3 /* podcast.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E731A0D1AB35CC80009E1C3 /* podcast.png */; };
 		6E76B9D51AB14DA100C8484B /* Midia.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E76B9D41AB14DA100C8484B /* Midia.m */; };
 		6ECCCB091AB0738400D78BE4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6ECCCB0B1AB0738400D78BE4 /* InfoPlist.strings */; };
 		6ECCCB0E1AB0738400D78BE4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6ECCCB101AB0738400D78BE4 /* InfoPlist.strings */; };
@@ -33,6 +42,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6E7319F41AB34D670009E1C3 /* Filme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Filme.h; sourceTree = "<group>"; };
+		6E7319F51AB34D670009E1C3 /* Filme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Filme.m; sourceTree = "<group>"; };
+		6E7319F71AB34D750009E1C3 /* Musica.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Musica.h; sourceTree = "<group>"; };
+		6E7319F81AB34D750009E1C3 /* Musica.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Musica.m; sourceTree = "<group>"; };
+		6E7319FA1AB34D930009E1C3 /* Ebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ebook.h; sourceTree = "<group>"; };
+		6E7319FB1AB34D930009E1C3 /* Ebook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ebook.m; sourceTree = "<group>"; };
+		6E7319FD1AB34DB90009E1C3 /* Podcast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Podcast.h; sourceTree = "<group>"; };
+		6E7319FE1AB34DB90009E1C3 /* Podcast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Podcast.m; sourceTree = "<group>"; };
+		6E731A051AB34F8D0009E1C3 /* MidiaViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MidiaViewViewController.h; sourceTree = "<group>"; };
+		6E731A061AB34F8D0009E1C3 /* MidiaViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MidiaViewViewController.m; sourceTree = "<group>"; };
+		6E731A071AB34F8D0009E1C3 /* MidiaViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MidiaViewViewController.xib; sourceTree = "<group>"; };
+		6E731A0B1AB35CC80009E1C3 /* movie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = movie.png; sourceTree = "<group>"; };
+		6E731A0C1AB35CC80009E1C3 /* music.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = music.png; sourceTree = "<group>"; };
+		6E731A0D1AB35CC80009E1C3 /* podcast.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = podcast.png; sourceTree = "<group>"; };
 		6E76B95A1AB0745400C8484B /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6E76B95B1AB0745400C8484B /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6E76B95C1AB0745400C8484B /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -78,6 +101,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E731A0A1AB35CC80009E1C3 /* Pasta Sem Título */ = {
+			isa = PBXGroup;
+			children = (
+				6E731A0B1AB35CC80009E1C3 /* movie.png */,
+				6E731A0C1AB35CC80009E1C3 /* music.png */,
+				6E731A0D1AB35CC80009E1C3 /* podcast.png */,
+			);
+			path = "Pasta Sem Título";
+			sourceTree = "<group>";
+		};
 		92C21CA71AAE757A0052ABE6 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +132,7 @@
 		92C21CB21AAE757A0052ABE6 /* iTunesSearch */ = {
 			isa = PBXGroup;
 			children = (
+				6E731A0A1AB35CC80009E1C3 /* Pasta Sem Título */,
 				92C21CE31AAE76AA0052ABE6 /* Celulas */,
 				92C21CE91AAE859A0052ABE6 /* Entidades */,
 				92C21CB71AAE757A0052ABE6 /* AppDelegate.h */,
@@ -158,6 +192,17 @@
 			children = (
 				6E76B9D31AB14DA100C8484B /* Midia.h */,
 				6E76B9D41AB14DA100C8484B /* Midia.m */,
+				6E7319F41AB34D670009E1C3 /* Filme.h */,
+				6E7319F51AB34D670009E1C3 /* Filme.m */,
+				6E7319F71AB34D750009E1C3 /* Musica.h */,
+				6E7319F81AB34D750009E1C3 /* Musica.m */,
+				6E7319FA1AB34D930009E1C3 /* Ebook.h */,
+				6E7319FB1AB34D930009E1C3 /* Ebook.m */,
+				6E7319FD1AB34DB90009E1C3 /* Podcast.h */,
+				6E7319FE1AB34DB90009E1C3 /* Podcast.m */,
+				6E731A051AB34F8D0009E1C3 /* MidiaViewViewController.h */,
+				6E731A061AB34F8D0009E1C3 /* MidiaViewViewController.m */,
+				6E731A071AB34F8D0009E1C3 /* MidiaViewViewController.xib */,
 			);
 			name = Entidades;
 			sourceTree = "<group>";
@@ -242,9 +287,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E731A101AB35CC80009E1C3 /* podcast.png in Resources */,
+				6E731A0E1AB35CC80009E1C3 /* movie.png in Resources */,
+				6E731A091AB34F8D0009E1C3 /* MidiaViewViewController.xib in Resources */,
 				6ECCCB131AB0738400D78BE4 /* Localizable.strings in Resources */,
 				92C21CC11AAE757A0052ABE6 /* Images.xcassets in Resources */,
 				6ECCCB0E1AB0738400D78BE4 /* InfoPlist.strings in Resources */,
+				6E731A0F1AB35CC80009E1C3 /* music.png in Resources */,
 				92C21CE21AAE76930052ABE6 /* TableViewCell.xib in Resources */,
 				92C21CDD1AAE75DC0052ABE6 /* TableView.xib in Resources */,
 			);
@@ -265,10 +314,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E7319FF1AB34DB90009E1C3 /* Podcast.m in Sources */,
+				6E7319FC1AB34D930009E1C3 /* Ebook.m in Sources */,
 				92C21CBC1AAE757A0052ABE6 /* TableViewController.m in Sources */,
 				92C21CDB1AAE75B30052ABE6 /* iTunesManager.m in Sources */,
+				6E7319F61AB34D670009E1C3 /* Filme.m in Sources */,
 				6E76B9D51AB14DA100C8484B /* Midia.m in Sources */,
+				6E731A081AB34F8D0009E1C3 /* MidiaViewViewController.m in Sources */,
 				92C21CB91AAE757A0052ABE6 /* AppDelegate.m in Sources */,
+				6E7319F91AB34D750009E1C3 /* Musica.m in Sources */,
 				92C21CE11AAE76930052ABE6 /* TableViewCell.m in Sources */,
 				92C21CB61AAE757A0052ABE6 /* main.m in Sources */,
 			);

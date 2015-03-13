@@ -25,8 +25,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
+    
     UINib *nib = [UINib nibWithNibName:@"TableViewCell" bundle:nil];
     [self.tableview registerNib:nib forCellReuseIdentifier:@"celulaPadrao"];
+
     
     itunes = [iTunesManager sharedInstance];
     
@@ -93,10 +96,26 @@
     return 70;
 }
 
-- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+
+-(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
     Midia *midia=midias[section][0];
-    return midia.tipo;
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, tableView.frame.size.width, 18)];
+    /* Create custom view to display section header... */
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(22, 3, tableView.frame.size.width, 18)];
+    
+    UIImage *imgM=[UIImage imageNamed:[NSString stringWithFormat:@"%@.png",midia.tipo]];
+    UIImageView *img =[[UIImageView alloc]initWithImage:imgM];
+    img.frame=CGRectMake(5, 5, 15, 15);
+    
+    label.text=midia.tipo;
+    NSLog(@"%@",midia.tipo);
+    
+    [view addSubview:label];
+    [view addSubview:img];
+    [view setBackgroundColor:[UIColor colorWithRed:0.5 green:0.5 blue:0.5 alpha:1]];
+    return view;
 }
+
 
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{

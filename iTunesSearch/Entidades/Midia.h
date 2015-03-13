@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+
 @interface Midia : NSObject
 
 @property (nonatomic, strong) NSString *tipo;

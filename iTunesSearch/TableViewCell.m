@@ -7,6 +7,7 @@
 //
 
 #import "TableViewCell.h"
+#import "MidiaViewViewController.h"
 
 @implementation TableViewCell
 
@@ -19,5 +20,6 @@
 
     // Configure the view for the selected state
 }
+
 
 @end
