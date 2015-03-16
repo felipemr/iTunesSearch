@@ -7,11 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Midia.h"
 
 @interface MidiaViewViewController : UIViewController
+
+@property (weak,nonatomic) Midia *midia;
+
 @property (weak, nonatomic) IBOutlet UILabel *nome;
 
-@property (weak, nonatomic) IBOutlet UIImageView *img;
+@property (strong, nonatomic) IBOutlet UIImageView *img;
 
 @property (weak, nonatomic) IBOutlet UILabel *preco;
 

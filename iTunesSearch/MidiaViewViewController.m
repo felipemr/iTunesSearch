@@ -16,6 +16,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self.nome setText:_midia.nome];
+    
+    [self.preco setText:[NSString stringWithFormat:@"USD :%@",_midia.preco]];
+    
+    NSData *data=[NSData dataWithContentsOfURL:[NSURL URLWithString:_midia.imgUrl]];
+    UIImage *img=[UIImage imageWithData:data];
+    [self.img setImage:img];
+    
     // Do any additional setup after loading the view from its nib.
 }
 

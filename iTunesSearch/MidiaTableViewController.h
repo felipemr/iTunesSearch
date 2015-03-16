@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "iTunesManager.h"
 
-@interface TableViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface MidiaTableViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property iTunesManager *itunes;
 @property (strong, nonatomic) IBOutlet UITableView *tableview;

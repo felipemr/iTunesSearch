@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E0A3D491AB66D1C0017742D /* TableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E0A3D4B1AB66D1C0017742D /* TableView.xib */; };
 		6E7319F61AB34D670009E1C3 /* Filme.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7319F51AB34D670009E1C3 /* Filme.m */; };
 		6E7319F91AB34D750009E1C3 /* Musica.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7319F81AB34D750009E1C3 /* Musica.m */; };
 		6E7319FC1AB34D930009E1C3 /* Ebook.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7319FB1AB34D930009E1C3 /* Ebook.m */; };
@@ -17,16 +18,12 @@
 		6E731A0F1AB35CC80009E1C3 /* music.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E731A0C1AB35CC80009E1C3 /* music.png */; };
 		6E731A101AB35CC80009E1C3 /* podcast.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E731A0D1AB35CC80009E1C3 /* podcast.png */; };
 		6E76B9D51AB14DA100C8484B /* Midia.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E76B9D41AB14DA100C8484B /* Midia.m */; };
-		6ECCCB091AB0738400D78BE4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6ECCCB0B1AB0738400D78BE4 /* InfoPlist.strings */; };
-		6ECCCB0E1AB0738400D78BE4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6ECCCB101AB0738400D78BE4 /* InfoPlist.strings */; };
-		6ECCCB131AB0738400D78BE4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6ECCCB151AB0738400D78BE4 /* Localizable.strings */; };
 		92C21CB61AAE757A0052ABE6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 92C21CB51AAE757A0052ABE6 /* main.m */; };
 		92C21CB91AAE757A0052ABE6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92C21CB81AAE757A0052ABE6 /* AppDelegate.m */; };
-		92C21CBC1AAE757A0052ABE6 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92C21CBB1AAE757A0052ABE6 /* TableViewController.m */; };
+		92C21CBC1AAE757A0052ABE6 /* MidiaTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92C21CBB1AAE757A0052ABE6 /* MidiaTableViewController.m */; };
 		92C21CC11AAE757A0052ABE6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92C21CC01AAE757A0052ABE6 /* Images.xcassets */; };
 		92C21CD01AAE757A0052ABE6 /* iTunesSearchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 92C21CCF1AAE757A0052ABE6 /* iTunesSearchTests.m */; };
 		92C21CDB1AAE75B30052ABE6 /* iTunesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 92C21CDA1AAE75B30052ABE6 /* iTunesManager.m */; };
-		92C21CDD1AAE75DC0052ABE6 /* TableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92C21CDC1AAE75DC0052ABE6 /* TableView.xib */; };
 		92C21CE11AAE76930052ABE6 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 92C21CDF1AAE76930052ABE6 /* TableViewCell.m */; };
 		92C21CE21AAE76930052ABE6 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92C21CE01AAE76930052ABE6 /* TableViewCell.xib */; };
 /* End PBXBuildFile section */
@@ -42,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6E0A3D4A1AB66D1C0017742D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TableView.xib; sourceTree = "<group>"; };
+		6E0A3D4C1AB66DD00017742D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/TableView.strings; sourceTree = "<group>"; };
+		6E0A3D4D1AB66DD70017742D /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/TableView.strings; sourceTree = "<group>"; };
+		6E0A3D4E1AB66DDF0017742D /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/TableView.strings; sourceTree = "<group>"; };
 		6E7319F41AB34D670009E1C3 /* Filme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Filme.h; sourceTree = "<group>"; };
 		6E7319F51AB34D670009E1C3 /* Filme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Filme.m; sourceTree = "<group>"; };
 		6E7319F71AB34D750009E1C3 /* Musica.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Musica.h; sourceTree = "<group>"; };
@@ -56,28 +57,21 @@
 		6E731A0B1AB35CC80009E1C3 /* movie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = movie.png; sourceTree = "<group>"; };
 		6E731A0C1AB35CC80009E1C3 /* music.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = music.png; sourceTree = "<group>"; };
 		6E731A0D1AB35CC80009E1C3 /* podcast.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = podcast.png; sourceTree = "<group>"; };
-		6E76B95A1AB0745400C8484B /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
-		6E76B95B1AB0745400C8484B /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		6E76B95C1AB0745400C8484B /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6E76B9D31AB14DA100C8484B /* Midia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Midia.h; path = Entidades/Midia.h; sourceTree = "<group>"; };
 		6E76B9D41AB14DA100C8484B /* Midia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Midia.m; path = Entidades/Midia.m; sourceTree = "<group>"; };
-		6ECCCB0A1AB0738400D78BE4 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		6ECCCB0F1AB0738400D78BE4 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		6ECCCB141AB0738400D78BE4 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
 		92C21CB01AAE757A0052ABE6 /* iTunesSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92C21CB41AAE757A0052ABE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92C21CB51AAE757A0052ABE6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		92C21CB71AAE757A0052ABE6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		92C21CB81AAE757A0052ABE6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		92C21CBA1AAE757A0052ABE6 /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
-		92C21CBB1AAE757A0052ABE6 /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		92C21CBA1AAE757A0052ABE6 /* MidiaTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MidiaTableViewController.h; sourceTree = "<group>"; };
+		92C21CBB1AAE757A0052ABE6 /* MidiaTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MidiaTableViewController.m; sourceTree = "<group>"; };
 		92C21CC01AAE757A0052ABE6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		92C21CC91AAE757A0052ABE6 /* iTunesSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iTunesSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92C21CCE1AAE757A0052ABE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92C21CCF1AAE757A0052ABE6 /* iTunesSearchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iTunesSearchTests.m; sourceTree = "<group>"; };
 		92C21CD91AAE75B30052ABE6 /* iTunesManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iTunesManager.h; sourceTree = "<group>"; };
 		92C21CDA1AAE75B30052ABE6 /* iTunesManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iTunesManager.m; sourceTree = "<group>"; };
-		92C21CDC1AAE75DC0052ABE6 /* TableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableView.xib; sourceTree = "<group>"; };
 		92C21CDE1AAE76930052ABE6 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
 		92C21CDF1AAE76930052ABE6 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 		92C21CE01AAE76930052ABE6 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
@@ -137,9 +131,9 @@
 				92C21CE91AAE859A0052ABE6 /* Entidades */,
 				92C21CB71AAE757A0052ABE6 /* AppDelegate.h */,
 				92C21CB81AAE757A0052ABE6 /* AppDelegate.m */,
-				92C21CBA1AAE757A0052ABE6 /* TableViewController.h */,
-				92C21CBB1AAE757A0052ABE6 /* TableViewController.m */,
-				92C21CDC1AAE75DC0052ABE6 /* TableView.xib */,
+				92C21CBA1AAE757A0052ABE6 /* MidiaTableViewController.h */,
+				92C21CBB1AAE757A0052ABE6 /* MidiaTableViewController.m */,
+				6E0A3D4B1AB66D1C0017742D /* TableView.xib */,
 				92C21CD91AAE75B30052ABE6 /* iTunesManager.h */,
 				92C21CDA1AAE75B30052ABE6 /* iTunesManager.m */,
 				92C21CC01AAE757A0052ABE6 /* Images.xcassets */,
@@ -151,8 +145,6 @@
 		92C21CB31AAE757A0052ABE6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6ECCCB151AB0738400D78BE4 /* Localizable.strings */,
-				6ECCCB101AB0738400D78BE4 /* InfoPlist.strings */,
 				92C21CB41AAE757A0052ABE6 /* Info.plist */,
 				92C21CB51AAE757A0052ABE6 /* main.m */,
 			);
@@ -171,7 +163,6 @@
 		92C21CCD1AAE757A0052ABE6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6ECCCB0B1AB0738400D78BE4 /* InfoPlist.strings */,
 				92C21CCE1AAE757A0052ABE6 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -268,7 +259,6 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
 			);
 			mainGroup = 92C21CA71AAE757A0052ABE6;
@@ -290,12 +280,10 @@
 				6E731A101AB35CC80009E1C3 /* podcast.png in Resources */,
 				6E731A0E1AB35CC80009E1C3 /* movie.png in Resources */,
 				6E731A091AB34F8D0009E1C3 /* MidiaViewViewController.xib in Resources */,
-				6ECCCB131AB0738400D78BE4 /* Localizable.strings in Resources */,
 				92C21CC11AAE757A0052ABE6 /* Images.xcassets in Resources */,
-				6ECCCB0E1AB0738400D78BE4 /* InfoPlist.strings in Resources */,
 				6E731A0F1AB35CC80009E1C3 /* music.png in Resources */,
 				92C21CE21AAE76930052ABE6 /* TableViewCell.xib in Resources */,
-				92C21CDD1AAE75DC0052ABE6 /* TableView.xib in Resources */,
+				6E0A3D491AB66D1C0017742D /* TableView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,7 +291,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6ECCCB091AB0738400D78BE4 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,7 +303,7 @@
 			files = (
 				6E7319FF1AB34DB90009E1C3 /* Podcast.m in Sources */,
 				6E7319FC1AB34D930009E1C3 /* Ebook.m in Sources */,
-				92C21CBC1AAE757A0052ABE6 /* TableViewController.m in Sources */,
+				92C21CBC1AAE757A0052ABE6 /* MidiaTableViewController.m in Sources */,
 				92C21CDB1AAE75B30052ABE6 /* iTunesManager.m in Sources */,
 				6E7319F61AB34D670009E1C3 /* Filme.m in Sources */,
 				6E76B9D51AB14DA100C8484B /* Midia.m in Sources */,
@@ -347,31 +334,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		6ECCCB0B1AB0738400D78BE4 /* InfoPlist.strings */ = {
+		6E0A3D4B1AB66D1C0017742D /* TableView.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6ECCCB0A1AB0738400D78BE4 /* pt */,
-				6E76B95C1AB0745400C8484B /* fr */,
+				6E0A3D4A1AB66D1C0017742D /* Base */,
+				6E0A3D4C1AB66DD00017742D /* en */,
+				6E0A3D4D1AB66DD70017742D /* fr */,
+				6E0A3D4E1AB66DDF0017742D /* pt */,
 			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		6ECCCB101AB0738400D78BE4 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6ECCCB0F1AB0738400D78BE4 /* pt */,
-				6E76B95B1AB0745400C8484B /* fr */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		6ECCCB151AB0738400D78BE4 /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6ECCCB141AB0738400D78BE4 /* pt */,
-				6E76B95A1AB0745400C8484B /* fr */,
-			);
-			name = Localizable.strings;
+			name = TableView.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

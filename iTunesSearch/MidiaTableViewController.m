@@ -1,4 +1,4 @@
-//
+ //
 //  ViewController.m
 //  iTunesSearch
 //
@@ -6,32 +6,32 @@
 //  Copyright (c) 2015 joaquim. All rights reserved.
 //
 
-#import "TableViewController.h"
+#import "MidiaTableViewController.h"
 #import "TableViewCell.h"
 #import "iTunesManager.h"
 //#import "Entidades/Filme.h"
 #import "Entidades/Midia.h"
+#import "MidiaViewViewController.h"
 
-@interface TableViewController () {
+@interface MidiaTableViewController () {
     NSArray *midias;
 }
 
 @end
 
-@implementation TableViewController
+@implementation MidiaTableViewController
 
 @synthesize itunes,searchBtn;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    
+    [self setTitle:@"Itunes Search"];
+    itunes = [iTunesManager sharedInstance];
+    [self.tableview reloadData];
     
     UINib *nib = [UINib nibWithNibName:@"TableViewCell" bundle:nil];
     [self.tableview registerNib:nib forCellReuseIdentifier:@"celulaPadrao"];
 
-    
-    itunes = [iTunesManager sharedInstance];
     
     [searchBtn setTitle:NSLocalizedString(@"Search", @"botao de pesquisa") forState:UIControlStateNormal];
     
@@ -108,7 +108,6 @@
     img.frame=CGRectMake(5, 5, 15, 15);
     
     label.text=midia.tipo;
-    NSLog(@"%@",midia.tipo);
     
     [view addSubview:label];
     [view addSubview:img];
@@ -116,7 +115,16 @@
     return view;
 }
 
-
+#pragma Table View Delegate
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSLog(@"oopa %@",indexPath);
+    MidiaViewViewController *mvc=[[MidiaViewViewController alloc]init];
+    long section=indexPath.section;
+    long row = indexPath.row;
+    NSArray *tipoMidia=midias[section];
+    mvc.midia=tipoMidia[row];
+    [self.navigationController pushViewController:mvc animated:YES];
+}
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
     [self.view endEditing:YES];

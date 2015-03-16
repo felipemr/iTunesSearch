@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 
 #warning Classe importada para uso no metodo de inicilizacao da App
-#import "TableViewController.h"
+#import "MidiaTableViewController.h"
 
 @interface AppDelegate ()
 
@@ -24,11 +24,12 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
-
+    
 #warning Adicionado codigo para iniciar com a interface do TableView
-//    TableViewController *tvc = [[TableViewController alloc] initWithNibName:@"TableView" bundle:nil];
-    TableViewController *tvc = [[TableViewController alloc] init];
-    [self.window setRootViewController:tvc];
+    
+    MidiaTableViewController *mtvc =[[MidiaTableViewController alloc]initWithNibName:@"TableView" bundle:nil];
+    UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:mtvc];
+    [self.window setRootViewController:nvc];
     [self.window makeKeyAndVisible];
     return YES;
 }

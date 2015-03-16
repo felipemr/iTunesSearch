@@ -23,17 +23,68 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vx1-Lh-NkG">
+                    <rect key="frame" x="125" y="79" width="350" height="263"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="250" id="Ce6-Dn-age">
+                            <variation key="heightClass=regular-widthClass=compact" constant="350"/>
+                        </constraint>
+                        <constraint firstAttribute="width" constant="350" id="LSM-zf-evV">
+                            <variation key="heightClass=regular-widthClass=compact" constant="250"/>
+                        </constraint>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Ce6-Dn-age"/>
+                            <exclude reference="LSM-zf-evV"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="Ce6-Dn-age"/>
+                            <include reference="LSM-zf-evV"/>
+                        </mask>
+                    </variation>
+                </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Preco" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RB7-gl-hb1">
                     <rect key="frame" x="125" y="403" width="350" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
+                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                        <rect key="frame" x="75" y="490" width="250" height="20.5"/>
+                    </variation>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vx1-Lh-NkG">
-                    <rect key="frame" x="125" y="79" width="350" height="263"/>
-                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="vdN-D9-23Z" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="85" id="8Cx-WG-1z5"/>
+                <constraint firstAttribute="centerX" secondItem="Vx1-Lh-NkG" secondAttribute="centerX" id="9eg-IJ-7W2"/>
+                <constraint firstAttribute="centerX" secondItem="vdN-D9-23Z" secondAttribute="centerX" id="C1k-Ll-Ft1"/>
+                <constraint firstItem="RB7-gl-hb1" firstAttribute="top" secondItem="Vx1-Lh-NkG" secondAttribute="bottom" constant="25" id="Fod-Ks-Pqi"/>
+                <constraint firstItem="RB7-gl-hb1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="75" id="OWD-11-NkR"/>
+                <constraint firstItem="Vx1-Lh-NkG" firstAttribute="top" secondItem="vdN-D9-23Z" secondAttribute="bottom" constant="10" id="fts-iI-9Vn"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="9eg-IJ-7W2"/>
+                    <exclude reference="fts-iI-9Vn"/>
+                    <exclude reference="8Cx-WG-1z5"/>
+                    <exclude reference="C1k-Ll-Ft1"/>
+                    <exclude reference="Fod-Ks-Pqi"/>
+                    <exclude reference="OWD-11-NkR"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="constraints">
+                    <include reference="9eg-IJ-7W2"/>
+                    <include reference="fts-iI-9Vn"/>
+                    <include reference="8Cx-WG-1z5"/>
+                    <include reference="C1k-Ll-Ft1"/>
+                    <include reference="Fod-Ks-Pqi"/>
+                    <include reference="OWD-11-NkR"/>
+                </mask>
+            </variation>
         </view>
     </objects>
 </document>

@@ -65,54 +65,31 @@ static bool isFirstAccess = YES;
     
     
     for (NSDictionary *item in resultados) {
+        Midia *media=[[Midia alloc]init];
+        [media setNome:[item objectForKey:@"trackName"]];
+        [media setTrackId:[item objectForKey:@"trackId"]];
+        [media setArtista:[item objectForKey:@"artistName"]];
+        [media setGenero:[item objectForKey:@"primaryGenreName"]];
+        [media setPais:[item objectForKey:@"country"]];
+        [media setPreco:[item objectForKey:@"trackPrice"]];
+        [media setImgUrl:[item objectForKey:@"artworkUrl100"]];
+        
         if ([[item objectForKey:@"kind"]  isEqual: @"song"]) {
-            Midia *meu=[[Midia alloc]init];
-            [meu setTipo:@"musica"];
-            [meu setNome:[item objectForKey:@"trackName"]];
-            [meu setTrackId:[item objectForKey:@"trackId"]];
-            [meu setArtista:[item objectForKey:@"artistName"]];
-            [meu setGenero:[item objectForKey:@"primaryGenreName"]];
-            [meu setPais:[item objectForKey:@"country"]];
-            [meu setPreco:[item objectForKey:@"trackPrice"]];
-            [meu setImgUrl:[item objectForKey:@"artworkUrl100"]];
-            [song addObject:meu];
+            [media setTipo:@"musica"];
+            [song addObject:media];
         }
         if ([[item objectForKey:@"kind"]  isEqual: @"book"]) {
-            Midia *meu=[[Midia alloc]init];
-            [meu setTipo:@"book"];
-            [meu setNome:[item objectForKey:@"trackName"]];
-            [meu setTrackId:[item objectForKey:@"trackId"]];
-            [meu setArtista:[item objectForKey:@"artistName"]];
-            [meu setGenero:[item objectForKey:@"primaryGenreName"]];
-            [meu setPais:[item objectForKey:@"country"]];
-            [meu setPreco:[item objectForKey:@"trackPrice"]];
-            [meu setImgUrl:[item objectForKey:@"artworkUrl100"]];
-            [book addObject:meu];
+            [media setTipo:@"book"];
+            [book addObject:media];
         }
         if ([[item objectForKey:@"kind"]  isEqual: @"feature-movie"]) {
-            Midia *filme = [[Midia alloc] init];
-            [filme setTipo:@"filme"];
-            [filme setNome:[item objectForKey:@"trackName"]];
-            [filme setTrackId:[item objectForKey:@"trackId"]];
-            [filme setArtista:[item objectForKey:@"artistName"]];
+            [media setTipo:@"filme"];
             //[(Filme *)filme setDuracao:[item objectForKey:@"trackTimeMillis"]];
-            [filme setGenero:[item objectForKey:@"primaryGenreName"]];
-            [filme setPais:[item objectForKey:@"country"]];
-            [filme setPreco:[item objectForKey:@"trackPrice"]];
-            [filme setImgUrl:[item objectForKey:@"artworkUrl100"]];
-            [featureMovie addObject:filme];
+            [featureMovie addObject:media];
         }
         if ([[item objectForKey:@"kind"]  isEqual: @"podcast"]) {
-            Midia *meu=[[Midia alloc]init];
-            [meu setTipo:@"podcast"];
-            [meu setNome:[item objectForKey:@"trackName"]];
-            [meu setTrackId:[item objectForKey:@"trackId"]];
-            [meu setArtista:[item objectForKey:@"artistName"]];
-            [meu setGenero:[item objectForKey:@"primaryGenreName"]];
-            [meu setPais:[item objectForKey:@"country"]];
-            [meu setPreco:[item objectForKey:@"trackPrice"]];
-            [meu setImgUrl:[item objectForKey:@"artworkUrl100"]];
-            [podcast addObject:meu];
+            [media setTipo:@"podcast"];
+            [podcast addObject:media];
         }
         
     }
@@ -129,6 +106,7 @@ static bool isFirstAccess = YES;
     if ([podcast count]!= 0) {
         [midia addObject:podcast];
     }
+    NSLog(@"passou por aqui");
     return midia;
 }
 
